@@ -19,6 +19,17 @@ html, body {
 }
 .site-footer {
   background: #ffefef;
+  font-size: 13px;
 }
 
+.site-footer-text {
+  padding-top: 27px;
+  text-align: center;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: #ffbcbc;
+  }
+}
 
