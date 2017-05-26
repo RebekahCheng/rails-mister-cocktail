@@ -24,4 +24,20 @@
   background: #3b5998;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('<%= image_path 'arrow.png' %>') no-repeat 330px 12px !important;
+}
 
+
+textarea {
+  resize: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: rgb(255, 188, 188) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(255, 188, 188) !important;
+  outline: 0 none !important;
+}

@@ -3,9 +3,9 @@
     <h1><%= @cocktail.name %></h1>
     <br>
     <div class="col-xs-12 col-sm-6">
-        <% if @cocktail.photo? %>
-          <%= cl_image_tag @cocktail.photo.path, width: 500 %>
-        <% end %>
+      <% if @cocktail.photo? %>
+        <%= cl_image_tag @cocktail.photo.path, width: 500 %>
+      <% end %>
     </div>
     <div class="col-xs-12 col-sm-4">
       <p>Recipe:</p>
@@ -15,7 +15,7 @@
       <hr>
       <%= simple_form_for [@cocktail, @dose], class: 'form-inline' do |f| %>
       <%= f.input :description, label: 'Amount'%>
-      <%= f.association :ingredient %>
+      <%= f.association :ingredient, prompt: "Select the ingredient" %>
       <%= f.submit class: 'btn btn-success' %>
     <% end %>
     </div>
